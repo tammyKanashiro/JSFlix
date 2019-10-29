@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,900,900i&display=swap" rel="stylesheet">
     <title>JS Flix</title>
 </head>
-<body style="background-image: url(images/hero-bg.png)">
-<div class="background-mask">
+<body>
+<div class="background-layer"></div>
+<div class="background-mask"></div>
     <header class="header">
         <div class="logo">
             <img  src="images/jsflix-logo.png">
         </div>
-        <a href="login.html"><button class="btnLogin">Login</button></a>
+        <a href="login.html" class="btn-login">Login</a>
     </header>
 
     <section class="content">
-        <h1>See what's next</h1>
-        <p>Watch anywhere. Cancel anytime.</p>
-        <button class="btn-cta">Try 30 days free     ></button>
+        <h1 class="home-heading">See what's next</h1>
+        <p class="home-p">Watch anywhere. Cancel anytime.</p>
+        <button class="btn-cta">
+            Try 30 days free <div class="btn-cta-icon">></div>
+        </button>
     </section>
-</div>
+
 </body>
 </html>

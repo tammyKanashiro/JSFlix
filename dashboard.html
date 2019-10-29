@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JS Flix</title>
 </head>
@@ -18,9 +20,9 @@
     
             <ul>
                 <li class="option">Home</li>
-                <li class="option">TV Show</li>
+                <li class="option">TV Shows</li>
                 <li class="option">Movies</li>
-                <li class="option">Recently Add</li>
+                <li class="option">Recently Added</li>
                 <li class="option">My List</li>
             </ul>
         </div>
@@ -43,11 +45,47 @@
                 My List
             </button>
         </div>
-        <h3 class="text-design">What Season 1 now</h3>
+        <h3 class="text-design">Watch Season 1 now</h3>
         <p class="text-design">Yesterday, he dreamed of owning a food truck. Today, he's<br>
             humanity's last hope. He's the Chosen One -- and the last <br>
             hero of his kind.
         </p>
+    </section>
+
+    <section class="container-movies">
+        <h3 class="more-movies-design">More movies</h3>
+        <div class="container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="img-movies/dora.jpeg" ></li>
+                    <li class="glide__slide"><img src="img-movies/dragon.jpeg" ></li>
+                    <li class="glide__slide"><img src="img-movies/joker.jpeg"></li>
+                    <li class="glide__slide"><img src="img-movies/avatar.jpeg"></li>
+                    <li class="glide__slide"><img src="img-movies/hellboy.jpeg"></li>
+                    <li class="glide__slide"><img src="img-movies/abominable.jpeg"></li>
+                    <li class="glide__slide"><img src="img-movies/acceotable-loss.jpeg"></li>
+                    <li class="glide__slide"><img src="img-movies/golem.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/lion-king.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/the-informer.jpg"></li>
+                    </ul>
+                </div>
+            
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: 'carousel',
+                perView:2,
+                bound: true
+            }
+            new Glide('.glide',config).mount()
+          </script>
     </section>
 </div>
 </body>
