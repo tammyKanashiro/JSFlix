@@ -162,6 +162,12 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 50px;
 }
 
+.scrollbar {
+    display: block;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+}
 
 /*Dashboard page*/
 
@@ -171,20 +177,20 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     flex-direction: column;
     margin-left: 20%;
-    height: calc(100% - 200px);
+    height: calc(100% - 300px);
 }
 
 .container-movies{
     height: calc(100% - 600px);
 }
-
+/*
 .content-glide{
     color: #FFF;
 }
 
 .glide__arrows{
  color: #FFF;
-}
+}*/
 
 .btn-submit{
     background-color: rgba(105, 102, 102, 0.4);

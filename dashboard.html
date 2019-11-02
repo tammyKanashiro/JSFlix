@@ -11,7 +11,7 @@
     <title>JS Flix</title>
 </head>
 <body style="background-image: url(images/WuAssassins.png)">
-<div class="background-mask">
+<div class="background-mask scrollbar">
     <header class="header">
         <div class="header"> 
             <a href="index.html">
@@ -54,21 +54,21 @@
 
     <section class="container-movies">
         <h3 class="more-movies-design">More movies</h3>
-        <div class="container">
+        <div class="container ">
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
-                    <li class="glide__slide"><img src="img-movies/dora.jpeg" ></li>
-                    <li class="glide__slide"><img src="img-movies/dragon.jpeg" ></li>
-                    <li class="glide__slide"><img src="img-movies/joker.jpeg"></li>
-                    <li class="glide__slide"><img src="img-movies/avatar.jpeg"></li>
-                    <li class="glide__slide"><img src="img-movies/hellboy.jpeg"></li>
-                    <li class="glide__slide"><img src="img-movies/abominable.jpeg"></li>
-                    <li class="glide__slide"><img src="img-movies/acceotable-loss.jpeg"></li>
-                    <li class="glide__slide"><img src="img-movies/golem.jpg"></li>
-                    <li class="glide__slide"><img src="img-movies/lion-king.jpg"></li>
-                    <li class="glide__slide"><img src="img-movies/the-informer.jpg"></li>
-                    </ul>
+                    <li class="glide__slide"><img src="img-movies/movie1.jpg" ></li>
+                    <li class="glide__slide"><img src="img-movies/movie2.jpg" ></li>
+                    <li class="glide__slide"><img src="img-movies/movie3.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie4.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie5.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie6.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie7.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie8.jpg"></li>
+                    <li class="glide__slide"><img src="img-movies/movie10.jpg"></li>
+                   
+                 </ul>
                 </div>
             
                 <div class="glide__arrows" data-glide-el="controls">
@@ -81,9 +81,9 @@
         <script>
             const config = {
                 type: 'carousel',
-                perView:2,
-                bound: true
-            }
+                perView:7,
+                gap: 30
+            };
             new Glide('.glide',config).mount()
           </script>
     </section>
